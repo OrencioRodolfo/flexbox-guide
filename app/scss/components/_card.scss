@@ -1,0 +1,11 @@
+// sass-lint:disable property-sort-order
+.card {
+  $shadow: rgba(0, 0, 0, .26);
+  @include screen-size('sm') {
+    padding: 15px;
+  }
+  padding: 30px 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px $shadow;
+  
+}

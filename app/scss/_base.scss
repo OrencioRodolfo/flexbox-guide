@@ -1,0 +1,8 @@
+// Modules and Variables (contains global styles, such as resets, typography, colors, etc.)
+@import 'base/resets';
+@import 'base/color-palettes';
+@import 'base/colors';
+@import 'base/fonts';
+
+// contains global mixins, functions, helper selectors, etc.
+@import 'utils/screen-sizes';

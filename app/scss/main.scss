@@ -1,0 +1,17 @@
+// sass-lint:disable property-sort-order
+@import 'base';
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  // min-width: 400px;
+}
+
+@import 'components/card';
+
+@import 'layout/header';
+@import 'layout/body';

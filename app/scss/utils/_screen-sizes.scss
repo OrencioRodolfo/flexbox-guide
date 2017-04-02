@@ -1,0 +1,63 @@
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-sm: 600px;
+$screen-sm-min: $screen-sm;
+
+$screen-md: 960px;
+$screen-md-min: $screen-md;
+
+$screen-lg: 1280px;
+$screen-lg-min: $screen-lg;
+
+$screen-xl: 1920px;
+$screen-xl-min: $screen-xl;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+
+// Media queries for different screen sizes
+@mixin screen-size($media) {
+  @if $media == 'xs' { // Extra small Devices, Phones
+    @media only screen and (max-width: $screen-xs-max) {
+      @content;
+    }
+  } @else if $media == 'gt-xs' { // Small Devices, Tablets
+    @media only screen and (min-width: $screen-sm-min) {
+      @content;
+    }
+  } @else if $media == 'sm' { // Small Devices, Tablets
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media == 'gt-sm' { // Small Devices, Tablets
+    @media only screen and (min-width: $screen-md-min) {
+      @content;
+    }
+  } @else if $media == 'md' { // Medium Devices, Desktops
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media == 'gt-md' { // Medium Devices, Desktops
+    @media only screen and (min-width: $screen-lg-min) {
+      @content;
+    }
+  } @else if $media == 'lg' { // Large Devices, professional desktops
+    @media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      @content;
+    }
+  } @else if $media == 'gt-lg' { // Extra large Devices, professional desktops
+    @media only screen and (min-width: $screen-xl-min) {
+      @content;
+    }
+  } @else if $media == 'xl' { // Extra large Devices, professional desktops
+    @media only screen and (min-width: $screen-xl-min) {
+      @content;
+    }
+  }
+}

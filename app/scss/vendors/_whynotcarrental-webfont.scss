@@ -1,0 +1,289 @@
+$line-height: normal;
+$font-height: 1em;
+
+@font-face {
+	font-family: "whynotcarrental-webfont";
+	src: url("/fonts/whynotcarrental-webfont/whynotcarrental-webfont.eot?bacbe6e2637942426fda1aa9ddbf9bdf?#iefix") format("embedded-opentype"),
+url("/fonts/whynotcarrental-webfont/whynotcarrental-webfont.woff?bacbe6e2637942426fda1aa9ddbf9bdf") format("woff"),
+url("/fonts/whynotcarrental-webfont/whynotcarrental-webfont.ttf?bacbe6e2637942426fda1aa9ddbf9bdf") format("truetype"),
+url("/fonts/whynotcarrental-webfont/whynotcarrental-webfont.svg?bacbe6e2637942426fda1aa9ddbf9bdf#whynotcarrental-webfont") format("svg");
+}
+
+.wn-icon {
+	line-height: $line-height;
+	font-size: $font-height;
+
+  &::before {
+  	font-family: whynotcarrental-webfont !important;
+  	font-style: normal;
+  	font-weight: normal !important;
+  	vertical-align: top;
+  }
+
+  $icon-sizes: (
+    "sm": 1em,
+    "1-5x": 1.5em,
+    "2x": 2em,
+    "3x": 3em,
+    "4x": 4em,
+  );
+
+  @each $key, $size in $icon-sizes {
+    &.wn-icon-#{$key} {
+      font-size: $size;
+    }
+  }
+
+  &.wn-icon-air-conditioning::before {
+  	content: "\f101";
+  }
+
+  &.wn-icon-airbag::before {
+  	content: "\f102";
+  }
+
+  &.wn-icon-automatic::before {
+  	content: "\f103";
+  }
+
+  &.wn-icon-avatar::before {
+  	content: "\f104";
+  }
+
+  &.wn-icon-back::before {
+  	content: "\f105";
+  }
+
+  &.wn-icon-cabriolet-simple::before {
+  	content: "\f106";
+  }
+
+  &.wn-icon-cabriolet::before {
+  	content: "\f107";
+  }
+
+  &.wn-icon-calendar::before {
+  	content: "\f108";
+  }
+
+  &.wn-icon-cancel::before {
+  	content: "\f109";
+  }
+
+  &.wn-icon-car-coin::before {
+  	content: "\f10a";
+  }
+
+  &.wn-icon-car-door::before {
+  	content: "\f10b";
+  }
+
+  &.wn-icon-car-euro::before {
+  	content: "\f10c";
+  }
+
+  &.wn-icon-car-side::before {
+  	content: "\f10d";
+  }
+
+  &.wn-icon-car::before {
+  	content: "\f10e";
+  }
+
+  &.wn-icon-checked-bold::before {
+  	content: "\f10f";
+  }
+
+  &.wn-icon-checked::before {
+  	content: "\f110";
+  }
+
+  &.wn-icon-compact-car-1::before {
+  	content: "\f111";
+  }
+
+  &.wn-icon-compact-car::before {
+  	content: "\f112";
+  }
+
+  &.wn-icon-crossed-flags::before {
+  	content: "\f113";
+  }
+
+  &.wn-icon-date::before {
+  	content: "\f114";
+  }
+
+  &.wn-icon-economic::before {
+  	content: "\f115";
+  }
+
+  &.wn-icon-envelope-fail::before {
+  	content: "\f116";
+  }
+
+  &.wn-icon-envelope-success::before {
+  	content: "\f117";
+  }
+
+  &.wn-icon-envelope-sucess::before {
+  	content: "\f118";
+  }
+
+  &.wn-icon-envelope::before {
+  	content: "\f119";
+  }
+
+  &.wn-icon-executive::before {
+  	content: "\f11a";
+  }
+
+  &.wn-icon-facebook-logo-button::before {
+  	content: "\f11b";
+  }
+
+  &.wn-icon-facebook-logo::before {
+  	content: "\f11c";
+  }
+
+  &.wn-icon-family::before {
+  	content: "\f11d";
+  }
+
+  &.wn-icon-fax::before {
+  	content: "\f11e";
+  }
+
+  &.wn-icon-funnel::before {
+  	content: "\f11f";
+  }
+
+  &.wn-icon-gas-station::before {
+  	content: "\f120";
+  }
+
+  &.wn-icon-gps::before {
+  	content: "\f121";
+  }
+
+  &.wn-icon-info-sign::before {
+  	content: "\f122";
+  }
+
+  &.wn-icon-left-arrow::before {
+  	content: "\f123";
+  }
+
+  &.wn-icon-location-fill::before {
+  	content: "\f124";
+  }
+
+  &.wn-icon-location::before {
+  	content: "\f125";
+  }
+
+  &.wn-icon-menu::before {
+  	content: "\f126";
+  }
+
+  &.wn-icon-mini-car::before {
+  	content: "\f127";
+  }
+
+  &.wn-icon-minus-symbol-bold::before {
+  	content: "\f128";
+  }
+
+  &.wn-icon-minus-symbol::before {
+  	content: "\f129";
+  }
+
+  &.wn-icon-motor::before {
+  	content: "\f12a";
+  }
+
+  &.wn-icon-motorbike::before {
+  	content: "\f12b";
+  }
+
+  &.wn-icon-musical-note::before {
+  	content: "\f12c";
+  }
+
+  &.wn-icon-nations-symbol::before {
+  	content: "\f12d";
+  }
+
+  &.wn-icon-next::before {
+  	content: "\f12e";
+  }
+
+  &.wn-icon-people::before {
+  	content: "\f12f";
+  }
+
+  &.wn-icon-phone::before {
+  	content: "\f130";
+  }
+
+  &.wn-icon-plus-symbol::before {
+  	content: "\f131";
+  }
+
+  &.wn-icon-question-mark-bold::before {
+  	content: "\f132";
+  }
+
+  &.wn-icon-question-mark-circle::before {
+  	content: "\f133";
+  }
+
+  &.wn-icon-question-mark-light::before {
+  	content: "\f134";
+  }
+
+  &.wn-icon-right-arrow::before {
+  	content: "\f135";
+  }
+
+  &.wn-icon-scooter-side::before {
+  	content: "\f136";
+  }
+
+  &.wn-icon-scooter::before {
+  	content: "\f137";
+  }
+
+  &.wn-icon-search::before {
+  	content: "\f138";
+  }
+
+  &.wn-icon-steering-wheel::before {
+  	content: "\f139";
+  }
+
+  &.wn-icon-suitcase::before {
+  	content: "\f13a";
+  }
+
+  &.wn-icon-surf-van::before {
+  	content: "\f13b";
+  }
+
+  &.wn-icon-suv::before {
+  	content: "\f13c";
+  }
+
+  &.wn-icon-transmision::before {
+  	content: "\f13d";
+  }
+
+  &.wn-icon-van-side::before {
+  	content: "\f13e";
+  }
+
+  &.wn-icon-van::before {
+  	content: "\f13f";
+  }
+
+}

@@ -1,0 +1,48 @@
+// sass-lint:disable property-sort-order
+.page-head {
+  $bottom-spacing: 180px;
+  @include screen-size('xs') {
+    padding: 15px 15px $bottom-spacing;
+  }
+  @include text-color('light');
+  text-align: center;
+  background-color: theme-color();
+  position: relative;
+  padding: 50px 50px $bottom-spacing;
+
+  .highlight {
+    font-size: 1.8rem;
+  }
+
+  .page-title {
+    @include text-color('dark');
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background: theme-color('background', 'light');
+    width: 60%;
+    max-width: 300px;
+
+
+    .head {
+      .logo {
+        width: 100px;
+      }
+    }
+
+    .body {
+      border-top: 1px solid theme-color('background', 'dark');
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 30px;
+      margin: 0 10px;
+    }
+  }
+}

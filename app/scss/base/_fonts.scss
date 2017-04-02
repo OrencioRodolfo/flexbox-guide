@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// Font weights
+$weight-thin: 100;
+$weight-extra-light: 200;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+$weight-ultra-bold: 900;
+
+// Text and line heights
+$base-font-size: 1rem;
+$base-line-height: 1.25 * $base-font-size;
+
+$text-settings: (
+  'xsmall': (
+    font-size: .8rem,
+    line-height: $base-line-height
+  ),
+  'small': (
+    font-size: 1rem,
+    line-height: $base-line-height
+  ),
+  'medium': (
+    font-size: 1.333rem,
+    line-height: $base-line-height * 2
+  ),
+  'large': (
+    font-size: 1.778rem,
+    line-height: $base-line-height * 2
+  ),
+  'xlarge': (
+    font-size: 2.3rem,
+    line-height: $base-line-height * 2
+  )
+);
+
+@function text-scale($level) {
+  @return map-get(map-get($text-settings, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(map-get($text-settings, $level), 'line-height');
+}
+
+@mixin text-setting($level) {
+  font-size: text-scale($level);
+  line-height: line-height($level);
+}
+
+// Spacings
+$letter-spacing-null: 0;
+$letter-spacing-small: 1px;
+$letter-spacing: 2px;
+$letter-spacing-medium: 2px;
+$letter-spacing-large: 4px;
+$letter-spacing-x-large: 6px;
+
+// Font families
+$font-families: (
+  'primary': 'Open Sans',
+  'secondary': Raleway
+);
+
+@function font-family($key) {
+  @return map-get($font-families, $key);
+}

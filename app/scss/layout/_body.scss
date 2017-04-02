@@ -1,0 +1,11 @@
+// sass-lint:disable property-sort-order
+.page-body {
+  $top-spacing: 180px;
+  @include screen-size('xs') {
+    padding: $top-spacing 15px 15px;
+  }
+  padding: $top-spacing 50px 50px;
+  flex-grow: 1;
+  padding-top: $top-spacing;
+
+}

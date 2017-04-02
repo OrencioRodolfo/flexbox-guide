@@ -1,0 +1,60 @@
+$theme-colors: (
+  'primary': (
+    'base': $palette-primary-400,
+    'light': $palette-primary-50,
+    'dark': $palette-primary-600
+  ),
+  'accent': (
+    'base': $palette-accent-a400,
+    'light': $palette-accent-a200,
+    'dark': $palette-accent-a700
+  ),
+  'foreground': (
+    'base': #393939,
+    'light': #6e6e6e,
+    'lighter': #b2b2b2,
+    'dark': #111,
+    'darker': #000
+  ),
+  'background': (
+    'base': #f8f5f5,
+    'light': #fff,
+    'dark': #ddd
+  )
+);
+
+$text-colors: (
+  'dark': (
+    'primary': $palette-text-dark-50,
+    'secondary': $palette-text-dark-300,
+    'disabled': $palette-text-dark-500,
+    'hint': $palette-text-dark-700,
+  ),
+  'light': (
+    'primary': $palette-text-light-50,
+    'secondary': $palette-text-light-300,
+    'disabled': $palette-text-light-500,
+    'hint': $palette-text-light-700,
+  ),
+);
+
+$info-colors: (
+  'warning': yellow,
+  'danger': #e73938,
+  'success': #39b080,
+  'info': #9b3f8a
+);
+
+@function theme-color($key: 'primary', $variant: 'base') {
+  $map: map-get($theme-colors, $key);
+  @return map-get($map, $variant);
+}
+
+@mixin text-color($level: 'light', $text-type: 'primary') {
+  $map: map-get($text-colors, $level);
+  color: map-get($map, $text-type);
+};
+
+@mixin info-color($level: 'info') {
+  color: map-get($info-colors, $level);
+}
