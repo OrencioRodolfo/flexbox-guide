@@ -16,14 +16,14 @@ $weight-ultra-bold: 900;
 $base-font-size: 1rem;
 $base-line-height: 1.25 * $base-font-size;
 
-$text-settings: (
+$font-settings: (
   'xsmall': (
     font-size: .8rem,
     line-height: $base-line-height
   ),
   'small': (
     font-size: 1rem,
-    line-height: $base-line-height
+    line-height: $base-line-height * 1.2
   ),
   'medium': (
     font-size: 1.333rem,
@@ -40,14 +40,14 @@ $text-settings: (
 );
 
 @function text-scale($level) {
-  @return map-get(map-get($text-settings, $level), 'font-size');
+  @return map-get(map-get($font-settings, $level), 'font-size');
 }
 
 @function line-height($level) {
-  @return map-get(map-get($text-settings, $level), 'line-height');
+  @return map-get(map-get($font-settings, $level), 'line-height');
 }
 
-@mixin text-setting($level) {
+@mixin font-setting($level: 'small') {
   font-size: text-scale($level);
   line-height: line-height($level);
 }
@@ -66,6 +66,6 @@ $font-families: (
   'secondary': Raleway
 );
 
-@function font-family($key) {
+@function font-family($key: 'primary') {
   @return map-get($font-families, $key);
 }
