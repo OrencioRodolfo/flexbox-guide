@@ -1,5 +1,6 @@
 // sass-lint:disable property-sort-order
 @import 'base';
+@import "flexboxgrid";
 
 body {
   @include text-color('dark');
@@ -16,6 +17,7 @@ body {
 @import 'components/box';
 @import 'components/simple-grid';
 @import 'components/list';
+@import 'components/image';
 
 @import 'layout/header';
 @import 'layout/body';

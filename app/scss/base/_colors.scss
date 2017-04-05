@@ -50,7 +50,7 @@ $info-colors: (
   @return map-get($map, $variant);
 }
 
-@mixin text-color($level: 'light', $text-type: 'primary') {
+@mixin text-color($level: 'dark', $text-type: 'primary') {
   $map: map-get($text-colors, $level);
   color: map-get($map, $text-type);
 };

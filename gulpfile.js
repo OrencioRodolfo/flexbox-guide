@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const moduleImporter = require('sass-module-importer');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -15,7 +16,7 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
   return gulp.src("app/scss/main.scss")
-    .pipe(sass())
+    .pipe(sass({ importer: moduleImporter() }))
     .pipe(gulp.dest("app/css"))
     .pipe(browserSync.stream());
 });

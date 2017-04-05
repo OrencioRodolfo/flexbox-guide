@@ -1,0 +1,27 @@
+.unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.numbered-list {
+  .item-number {
+    $size: 30px;
+    @include text-color('light');
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    text-align: center;
+    background-color: theme-color();
+    display: inline-block;
+    margin: 5px;
+
+  }
+
+  li:nth-child(even) {
+    .item-number {
+      background-color: theme-color('accent');
+    }
+  }
+}

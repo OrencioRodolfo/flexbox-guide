@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 200;
+  margin: 0;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: theme-color('accent');
+
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .title-underline {
+    border-top: 1px solid;
+    border-color: theme-color('accent');
+    width: 50px;
+    margin: 0 auto 40px auto;
+  }
+
+  &.primary {
+    color: theme-color();
+    
+    .title-underline {
+      border-color: theme-color();
+
+    }
+  }
+
+}
