@@ -3,5 +3,32 @@
   <div class="title-underline"></div>
 </h3>
 <article class="text-box">
-  coisas
+  <p>
+    Flexbox is a CSS module and so it involves a whole set of properties that are meant to be applied on flex containers (parent element) and flex items (childrens).
+    <br>
+    Until now, you had "block" and "inline" flow directions. Now flexbox introduce "flex-flow directions".
+  </p>
+
+  <p>
+    Let's take a look over the following figure from the specification and get the basic idea behind flexbox.
+  </p>
+  <div class="text-center">
+    <img src="assets/img/flexbox-axis.png" alt="Flexbox axis">
+  </div>
+
+  <p>
+    Basically, you have two possible axis (which you can define through <code class="language-css">flex-direction</code>) and the <i>flex items</i> will laid out over the defined axis within its <i>start</i> and <i>end</i>.
+    <br>
+    Pretty straight forward right?
+  </p>
+
+  <p>In more detail</p>
+  <ul>
+    <li><b>main axis</b> - The main axis of a flex container is the primary axis along which flex items are laid out.</li>
+    <li><b>main-start | main-end</b> - The flex items are placed within the container starting from main-start and going to main-end.</li>
+    <li><b>main size</b> - A flex item's width or height, whichever is in the main dimension, is the item's main size.</li>
+    <li><b>cross axis</b> - The axis perpendicular to the main axis. Its direction depends on the main axis direction (horizontal or vertical).</li>
+    <li><b>cross-start | cross-end</b> - Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+    <li><b>cross size</b> - The width or height of a flex item, whichever is in the cross dimension, is the item's cross size.</li>
+  </ul>
 </article>
