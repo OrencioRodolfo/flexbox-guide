@@ -1,0 +1,28 @@
+.challenge {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+.flex-container {
+  $shadow: rgba(0, 0, 0, .26);
+  background-color: theme-color('background');
+  box-shadow: 0 2px 5px $shadow;
+  padding: 15px;
+  // margin: 15px;
+
+  > div {
+    $size: 30px;
+    @include text-color('light', 'secondary');
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+
+    &:nth-child(even) {
+      background-color: theme-color('accent');
+    }
+    &:nth-child(odd) {
+      background-color: theme-color();
+    }
+  }
+}

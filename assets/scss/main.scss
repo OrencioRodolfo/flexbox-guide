@@ -13,12 +13,16 @@ body {
   font-family: font-family();
 }
 
+@import 'components/text';
 @import 'components/card';
 @import 'components/title';
 @import 'components/box';
 @import 'components/simple-grid';
 @import 'components/list';
 @import 'components/image';
+@import 'components/challenge';
 
 @import 'layout/header';
 @import 'layout/body';
+
+@import 'challenges/module';
