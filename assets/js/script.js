@@ -16,6 +16,9 @@ $.when(
   $('#syllabus').html(syllabusTpl);
   $('#browser-support').html(browserSupportTpl);
   $('#basics-terminology').html(basicsTpl);
+
+  // highlight all the code snippets
+  Prism.highlightAll();
 });
 
 /**
