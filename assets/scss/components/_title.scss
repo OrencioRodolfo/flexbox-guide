@@ -6,15 +6,20 @@ h4 {
   margin: 0;
 }
 
-.section-title {
-  text-align: center;
+.section-title,
+.section-heading {
   text-transform: uppercase;
-  letter-spacing: 4px;
-  color: theme-color('accent');
-
+  letter-spacing: 4px;  
+  
   .title {
     margin-bottom: 20px;
   }
+}
+
+.section-title {
+  text-align: center;
+  color: theme-color('accent');
+
   
   .title-underline {
     border-top: 1px solid;
@@ -28,8 +33,6 @@ h4 {
     
     .title-underline {
       border-color: theme-color();
-
     }
   }
-
 }

@@ -833,13 +833,17 @@ h4 {
   font-weight: 200;
   margin: 0; }
 
+.section-title,
+.section-heading {
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+  .section-title .title,
+  .section-heading .title {
+    margin-bottom: 20px; }
+
 .section-title {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 4px;
   color: #f08110; }
-  .section-title .title {
-    margin-bottom: 20px; }
   .section-title .title-underline {
     border-top: 1px solid;
     border-color: #f08110;
@@ -883,6 +887,23 @@ h4 {
 .fluid-img {
   width: 100%; }
 
+.challenge:not(:first-child) {
+  margin-top: 40px; }
+
+.flex-container {
+  background-color: #f8f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  padding: 15px; }
+  .flex-container > div {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 5px;
+    padding: 10px; }
+    .flex-container > div:nth-child(even) {
+      background-color: #f08110; }
+    .flex-container > div:nth-child(odd) {
+      background-color: #26A69A; }
+
 .page-head {
   color: white;
   text-align: center;
@@ -923,3 +944,6 @@ h4 {
     padding: 30px 0; }
     .page-body .page-section:nth-child(even) {
       background: #f8f5f5; }
+
+#challenge-1 .final-state .flex-container {
+  display: flex; }
