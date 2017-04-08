@@ -1,6 +1,7 @@
 // sass-lint:disable property-sort-order
 @import 'base';
-@import "flexboxgrid";
+@import 'vendors';
+
 
 body {
   @include text-color('dark');
