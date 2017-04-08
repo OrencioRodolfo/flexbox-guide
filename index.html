@@ -8,9 +8,6 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-      <div id="one"></div>
-      <div id="two"></div>
-
       <section id="page-head" class="page-head"></section>
 
       <section class="page-body">
@@ -29,6 +26,14 @@
             
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js" type="text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js" data-manual type="text/javascript"></script>
+      <script src="https://cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
       <script src="assets/js/script.js"></script>
+      <script type="text/javascript">
+        $(function() {
+          // highlight all the code snippets
+          Prism.highlightAll();
+        });
+      </script>
     </body>
 </html>

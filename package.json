@@ -20,6 +20,7 @@
     "flexboxgrid": "^6.3.1",
     "handlebars": "^4.0.6",
     "jquery": "^3.2.1",
+    "prismjs": "^1.6.0",
     "sass-module-importer": "^1.4.0"
   }
 }
