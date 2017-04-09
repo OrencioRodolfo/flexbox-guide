@@ -28,20 +28,12 @@ $.when(
 
   $('#challenges').html(challengesIndexTpl);
   $('.challenge .object-preview').html(objectPreviewTpl);
+
+  $('.challenge').each(function() {
+    $(this).find('.initial-state').html(chalOneTpl);
+    $(this).find('.final-state').html(chalOneTpl);
+  });
   
-  $('#challenge-1 .initial-state').html(chalOneTpl);
-  $('#challenge-1 .final-state').html(chalOneTpl);
-  
-  $('#challenge-2 .initial-state').html(chalOneTpl);
-  $('#challenge-2 .final-state').html(chalOneTpl);
-
-  $('#challenge-3 .initial-state').html(chalOneTpl);
-  $('#challenge-3 .final-state').html(chalOneTpl);
-
-  $('#challenge-4 .initial-state').html(chalOneTpl);
-  $('#challenge-4 .final-state').html(chalOneTpl);
-
-
   // highlight all the code snippets
   Prism.highlightAll();
 });
