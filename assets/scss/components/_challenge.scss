@@ -11,8 +11,7 @@
   padding: 15px;
   // margin: 15px;
 
-  > div {
-    $size: 30px;
+  > * {
     @include text-color('light', 'secondary');
     text-align: center;
     margin: 5px;

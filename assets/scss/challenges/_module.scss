@@ -1,9 +1,49 @@
 
 #challenge-1 {
   .initial-state {
-    @import '1/exercise';    
+    @import '1/exercise';
   }
+
   .final-state {
     @import '1/solution';
+  }
+}
+
+#challenge-2 {
+  .initial-state {
+    @import '2/exercise';
+  }
+  .final-state {
+    @import '2/solution';
+  }
+}
+
+#challenge-3 {
+  .initial-state {
+    @import '3/exercise';
+  }
+
+  .final-state {
+    @import '3/solution';
+  }
+}
+
+#challenge-4 {
+  .initial-state {
+    @import '4/exercise';
+  }
+
+  .final-state {
+    @import '4/solution';
+  }
+}
+
+#challenge-5 {
+  .initial-state {
+    @import '5/exercise';
+  }
+
+  .final-state {
+    @import '5/solution';
   }
 }

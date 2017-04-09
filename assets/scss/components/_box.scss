@@ -2,4 +2,12 @@
   max-width: 1280px;
   width: 80%;
   margin: 0 auto;
+
+  @include screen-size('xs') {
+    width: 95%;
+  }
+  
+  @include screen-size('sm') {
+    width: 90%;
+  }
 }
