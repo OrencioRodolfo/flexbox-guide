@@ -9,8 +9,7 @@
   background-color: theme-color('background');
   box-shadow: 0 2px 5px $shadow;
   padding: 15px;
-  // margin: 15px;
-
+ 
   > * {
     @include text-color('light', 'secondary');
     text-align: center;
@@ -24,4 +23,8 @@
       background-color: theme-color();
     }
   }
+}
+
+.jsbin-wrapper {
+  margin-top: 15px;
 }

@@ -913,6 +913,9 @@ h4 {
     .flex-container > *:nth-child(odd) {
       background-color: #26A69A; }
 
+.jsbin-wrapper {
+  margin-top: 15px; }
+
 .page-head {
   color: white;
   text-align: center;
@@ -954,25 +957,5 @@ h4 {
     .page-body .page-section:nth-child(even) {
       background: #f8f5f5; }
 
-#challenge-1 .final-state .flex-container {
+#challenge-1 .object-preview .flex-container {
   display: flex; }
-
-#challenge-2 .final-state .flex-container {
-  display: flex;
-  flex-direction: column; }
-
-#challenge-3 .final-state .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100px; }
-
-#challenge-4 .final-state .flex-container {
-  display: flex;
-  justify-content: flex-end; }
-
-#challenge-5 .final-state .flex-container {
-  display: flex;
-  flex-direction: column;
-  height: 350px;
-  justify-content: flex-end;
-  align-items: center; }
