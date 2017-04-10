@@ -6,8 +6,9 @@ $.when(
   loadHbTemplate('basics'),
   loadHbTemplate('learn-by-doing'),
   loadHbTemplate('challenges/index'),
-  loadHbTemplate('challenges/1-flexbox-container'),
-  loadHbTemplate('challenges/object-preview')
+  loadHbTemplate('challenges/1'),
+  loadHbTemplate('challenges/2'),
+  loadHbTemplate('challenges/3')
 ).done(function(
   headTpl,
   introTpl,
@@ -16,8 +17,9 @@ $.when(
   basicsTpl,
   learnByDoingTpl,
   challengesIndexTpl,
-  chalOneTpl,
-  objectPreviewTpl
+  challenge1, 
+  challenge2, 
+  challenge3
 ) {
   $('#page-head').html(headTpl);
   $('#introduction').html(introTpl);
@@ -27,12 +29,9 @@ $.when(
   $('#learn-by-doing').html(learnByDoingTpl);
 
   $('#challenges').html(challengesIndexTpl);
-  $('.challenge .object-preview').html(objectPreviewTpl);
-
-  $('.challenge').each(function() {
-    $(this).find('.initial-state').html(chalOneTpl);
-    $(this).find('.final-state').html(chalOneTpl);
-  });
+  $('#challenge-1').html(challenge1);
+  $('#challenge-2').html(challenge2);
+  $('#challenge-3').html(challenge3);
   
   // highlight all the code snippets
   Prism.highlightAll();
