@@ -2,6 +2,14 @@
   &:not(:first-child) {
     margin-top: 40px;
   }
+
+  .section-heading {
+    cursor: pointer;
+  }
+
+  article {
+    display: none;
+  }
 }
 
 .flex-container {

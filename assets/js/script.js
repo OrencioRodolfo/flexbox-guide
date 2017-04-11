@@ -50,3 +50,7 @@ function loadHbTemplate(path, data) {
     })
   });
 }
+
+$('body').on('click', '.challenge .section-heading', function() {
+  $(this).closest('.challenge').find('article').slideToggle('medium');
+});
