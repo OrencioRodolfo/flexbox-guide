@@ -913,7 +913,7 @@ h4 {
     .flex-container > *:nth-child(odd) {
       background-color: #26A69A; }
 
-.jsbin-wrapper {
+.code-editor-wrapper {
   margin-top: 15px; }
 
 .page-head {
