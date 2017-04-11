@@ -899,6 +899,12 @@ h4 {
 .challenge:not(:first-child) {
   margin-top: 40px; }
 
+.challenge .section-heading {
+  cursor: pointer; }
+
+.challenge article {
+  display: none; }
+
 .flex-container {
   background-color: #f8f5f5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
