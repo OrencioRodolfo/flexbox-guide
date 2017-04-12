@@ -5,9 +5,18 @@
 
   .section-heading {
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: theme-color('primary', 'dark');
+
+    .title {
+      margin-bottom: 0;
+    }
   }
 
-  article {
+  .challenge-body {
     display: none;
   }
 }
@@ -35,4 +44,13 @@
 
 .code-editor-wrapper {
   margin-top: 15px;
+}
+
+.challenge-body {
+  margin-bottom: 10px;
+}
+
+.challenge-footer {
+  height: 1px;
+  background-color: theme-color('primary', 'dark');
 }
