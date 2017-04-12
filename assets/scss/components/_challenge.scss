@@ -5,10 +5,21 @@
 
   .section-heading {
     cursor: pointer;
+
+    .title {
+      margin-bottom: 0;
+    }
   }
 
   article {
     display: none;
+  }
+
+  .section-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: theme-color('primary', 'dark');
   }
 }
 
@@ -35,4 +46,13 @@
 
 .code-editor-wrapper {
   margin-top: 15px;
+}
+
+.challenge-body {
+  margin-bottom: 10px;
+}
+
+.challenge-footer {
+  height: 1px;
+  background-color: theme-color('primary', 'dark');
 }

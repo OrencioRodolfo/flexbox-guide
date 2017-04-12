@@ -52,5 +52,7 @@ function loadHbTemplate(path, data) {
 }
 
 $('body').on('click', '.challenge .section-heading', function() {
-  $(this).closest('.challenge').find('article').slideToggle('medium');
+  $(this).find('.icon').toggleClass('fa-chevron-down');
+  $(this).find('.icon').toggleClass('fa-chevron-up');
+  $(this).closest('.challenge').find('.challenge-body').slideToggle('medium');
 });
