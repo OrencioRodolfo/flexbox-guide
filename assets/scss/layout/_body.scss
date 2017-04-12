@@ -1,8 +1,7 @@
 // sass-lint:disable property-sort-order
 .page-body {
-  $top-spacing: 120px;
   @include font-setting();
-  padding: $top-spacing 0;
+  padding-top: 120px;
   flex-grow: 1;
 
   .page-section {
@@ -11,5 +10,21 @@
     &:nth-child(even) {
       background: theme-color('background');
     }
+  }
+}
+
+.page-footer {
+  @include text-color('light', 'secondary');
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid;
+  border-color: theme-color('background', 'dark');
+  background-color: theme-color('foreground', 'light');
+  
+  .link {
+    @include font-setting('xsmall');
+    @include text-color('light', 'secondary');
+    font-family: font-family('secondary');
+    font-weight: $weight-light;
   }
 }
