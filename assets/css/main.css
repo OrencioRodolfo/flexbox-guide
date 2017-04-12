@@ -900,18 +900,17 @@ h4 {
   margin-top: 40px; }
 
 .challenge .section-heading {
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #00897B; }
   .challenge .section-heading .title {
     margin-bottom: 0; }
 
-.challenge article {
+.challenge .challenge-body {
   display: none; }
-
-.challenge .section-heading {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  color: #00897B; }
 
 .flex-container {
   background-color: #f8f5f5;
