@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const moduleImporter = require('sass-module-importer');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -20,6 +21,10 @@ gulp.task('sass', function() {
   return gulp.src("assets/scss/main.scss")
     .pipe(sass({ importer: moduleImporter() }))
     .pipe(gulp.dest("assets/css"))
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions'],
+      cascade: false
+    }))
     .pipe(browserSync.stream());
 });
 
