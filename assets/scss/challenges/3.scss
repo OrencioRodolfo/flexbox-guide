@@ -1,0 +1,9 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+
+  div {
+    width: 60px;
+  }
+}

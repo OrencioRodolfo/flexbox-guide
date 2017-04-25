@@ -6,9 +6,24 @@
   <div class="row">
     <div class="col-xs-12 col-md-6">
       <p>
-        You always need a container to start "flexing out". This container is who defines how its items will lay out and how the space among them will be distributed.
+        <code>flex-wrap</code> let's you distribute flex items acrross multiple lines when these doesn't feet into the first line of the flex container.
       </p>
-      <p>You can have inline or block flex containers, depending in what you define for <code>display</code>.</p>
+      <p>
+        It can asume three different values: 
+      </p>
+
+      <div class="row middle-xs">
+        <div class="col-xs-12 col-sm-5">
+            <ul>
+              <li><code>nowrap</code> (default)</li>
+              <li><code>wrap</code></li>
+              <li><code>wrap-reverse</code></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <img class="fluid-img flex-axis-img" src="assets/img/exercises/flex-wrap.svg" alt="Flex wrap">
+        </div>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6">
       <div class="object-preview">
