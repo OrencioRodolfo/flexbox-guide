@@ -993,3 +993,14 @@ h4 {
 
 #challenge-1 .object-preview .flex-container {
   display: flex; }
+
+#challenge-2 .object-preview .flex-container {
+  display: flex;
+  flex-direction: row-reverse; }
+
+#challenge-3 .object-preview .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; }
+  #challenge-3 .object-preview .flex-container div {
+    width: 60px; }
