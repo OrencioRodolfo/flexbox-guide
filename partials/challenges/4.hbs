@@ -1,13 +1,31 @@
 <h4 class="section-heading">
-  <div class="title">#4 - Horizontal alignment</div>
+  <div class="title">#4 - Flex items alignment on the main axis</div>
+  <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
 </h4>
-<article>
+<article class="challenge-body">
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <p>
-        You always need a container to start "flexing out". This container is who defines how its items will lay out and how the space among them will be distributed.
-      </p>
-      <p>You can have inline or block flex containers, depending in what you define for <code>display</code>.</p>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+            <p>
+              <code>justify-content</code> enables you to distribute free space that is left between the flex items on the main axis.
+            </p>
+            <p>
+              There are 5 different values that you can apply over <code>justify-content</code>
+            </p>
+            <ul>
+              <li><code>flex-start</code> (default)</li>
+              <li><code>flex-end</code></li>
+              <li><code>center</code></li>
+              <li><code>space-between</code></li>
+              <li><code>space-around</code></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <img class="fluid-img flex-axis-img" src="assets/img/exercises/justify-content.svg" alt="Justify content">
+        </div>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6">
       <div class="object-preview">
@@ -23,4 +41,5 @@
   <div class="code-editor-wrapper">
     <iframe src="https://embed.plnkr.co/EdwD3EcBX5nG4Dw1dSMS/?show=preview" frameborder="0" width="100%" height="500"></iframe>
   </div>
-</article> 
+</article>
+<div class="challenge-footer"></div>

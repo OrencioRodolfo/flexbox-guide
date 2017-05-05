@@ -1004,3 +1004,9 @@ h4 {
   width: 300px; }
   #challenge-3 .object-preview .flex-container div {
     width: 60px; }
+
+#challenge-4 .object-preview .flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center; }
