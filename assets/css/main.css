@@ -1020,3 +1020,13 @@ h4 {
     width: 25%; }
   #challenge-5 .object-preview .flex-container div:nth-child(odd) {
     line-height: 40px; }
+
+#challenge-6 .object-preview .flex-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  height: 200px;
+  align-content: center;
+  justify-content: center; }
+  #challenge-6 .object-preview .flex-container div {
+    width: 20%; }
