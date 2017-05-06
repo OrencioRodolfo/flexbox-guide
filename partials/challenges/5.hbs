@@ -1,21 +1,48 @@
 <h4 class="section-heading">
-  <div class="title">#5 - Vertical alignment</div>
+  <div class="title">#5 - Flex items alignment on the cross axis</div>
+  <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
 </h4>
-<article>
+<article class="challenge-body">
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <p>
-        You always need a container to start "flexing out". This container is who defines how its items will lay out and how the space among them will be distributed.
-      </p>
-      <p>You can have inline or block flex containers, depending in what you define for <code>display</code>.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            <code>align-items</code> defines how flex items are laid out along the cross axis on the current line.
+            <br>
+            Is like <code>justify-content</code>, but this time on the cross-axis.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+            <p>
+              There are 5 different values that you can apply over <code>align-items</code>
+            </p>
+            <ul>
+              <li><code>flex-start</code></li>
+              <li><code>flex-end</code></li>
+              <li><code>center</code></li>
+              <li><code>baseline</code></li>
+              <li><code>stretch</code> (default)</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <img class="fluid-img flex-axis-img" src="assets/img/exercises/align-items.svg" alt="Align items">
+        </div>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6">
       <div class="object-preview">
         <div class="flex-container">
-          <div>1</div>
+          <div>Lorem ipsum dolor</div>
           <div>2</div>
           <div>3</div>
-          <div>4</div>
+          <div>Morbi a metus. Phasellus enim erat</div>
+          <div>Lorem ipsum dolor</div>
+          <div>2</div>
+          <div>3</div>
+          <div>Morbi a metus. Phasellus enim erat</div>
         </div>
       </div>
     </div>
@@ -23,4 +50,5 @@
   <div class="code-editor-wrapper">
     <iframe src="https://embed.plnkr.co/EdwD3EcBX5nG4Dw1dSMS/?show=preview" frameborder="0" width="100%" height="500"></iframe>
   </div>
-</article> 
+</article>
+<div class="challenge-footer"></div>
