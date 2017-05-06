@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  min-height: 400px;
+
+  div {
+    width: 25%;
+  }
+
+  div:nth-child(odd) {
+    line-height: 40px;
+  }
+}
+
