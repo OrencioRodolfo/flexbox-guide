@@ -1,0 +1,10 @@
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+
+  .middle {
+    align-self: center;
+  }
+}
+

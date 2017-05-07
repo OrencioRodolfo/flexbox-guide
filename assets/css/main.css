@@ -1030,3 +1030,10 @@ h4 {
   justify-content: center; }
   #challenge-6 .object-preview .flex-container div {
     width: 20%; }
+
+#challenge-7 .object-preview .flex-container {
+  display: flex;
+  height: 200px;
+  align-items: flex-end; }
+  #challenge-7 .object-preview .flex-container .middle {
+    align-self: center; }
