@@ -1042,3 +1042,8 @@ h4 {
   display: flex; }
   #challenge-8 .object-preview .flex-container div:nth-child(odd) {
     order: 1; }
+
+#challenge-9 .object-preview .flex-container {
+  display: flex; }
+  #challenge-9 .object-preview .flex-container div:last-child {
+    flex-grow: 1; }
