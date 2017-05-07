@@ -1037,3 +1037,8 @@ h4 {
   align-items: flex-end; }
   #challenge-7 .object-preview .flex-container .middle {
     align-self: center; }
+
+#challenge-8 .object-preview .flex-container {
+  display: flex; }
+  #challenge-8 .object-preview .flex-container div:nth-child(odd) {
+    order: 1; }

@@ -12,7 +12,8 @@ $.when(
   loadHbTemplate('challenges/4'),
   loadHbTemplate('challenges/5'),
   loadHbTemplate('challenges/6'),
-  loadHbTemplate('challenges/7')
+  loadHbTemplate('challenges/7'),
+  loadHbTemplate('challenges/8')
 ).done(function(
   headTpl,
   introTpl,
@@ -27,7 +28,8 @@ $.when(
   challenge4,
   challenge5,
   challenge6,
-  challenge7
+  challenge7,
+  challenge8
 ) {
   $('#page-head').html(headTpl);
   $('#introduction').html(introTpl);
@@ -44,6 +46,7 @@ $.when(
   $('#challenge-5').html(challenge5);
   $('#challenge-6').html(challenge6);
   $('#challenge-7').html(challenge7);
+  $('#challenge-8').html(challenge8);
   
   // highlight all the code snippets
   Prism.highlightAll();

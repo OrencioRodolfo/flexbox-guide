@@ -1,0 +1,8 @@
+.flex-container {
+  display: flex;
+
+  div:nth-child(odd) {
+    order: 1;
+  }
+}
+
