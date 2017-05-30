@@ -1,0 +1,8 @@
+.flex-container {
+  display: flex;
+
+  div:first-child {
+    flex-basis: 20%;
+  }
+}
+

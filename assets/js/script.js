@@ -10,7 +10,13 @@ $.when(
   loadHbTemplate('challenges/2'),
   loadHbTemplate('challenges/3'),
   loadHbTemplate('challenges/4'),
-  loadHbTemplate('challenges/5')
+  loadHbTemplate('challenges/5'),
+  loadHbTemplate('challenges/6'),
+  loadHbTemplate('challenges/7'),
+  loadHbTemplate('challenges/8'),
+  loadHbTemplate('challenges/9'),
+  loadHbTemplate('challenges/10'),
+  loadHbTemplate('challenges/11')
 ).done(function(
   headTpl,
   introTpl,
@@ -23,7 +29,13 @@ $.when(
   challenge2, 
   challenge3,
   challenge4,
-  challenge5
+  challenge5,
+  challenge6,
+  challenge7,
+  challenge8,
+  challenge9,
+  challenge10,
+  challenge11
 ) {
   $('#page-head').html(headTpl);
   $('#introduction').html(introTpl);
@@ -38,6 +50,12 @@ $.when(
   $('#challenge-3').html(challenge3);
   $('#challenge-4').html(challenge4);
   $('#challenge-5').html(challenge5);
+  $('#challenge-6').html(challenge6);
+  $('#challenge-7').html(challenge7);
+  $('#challenge-8').html(challenge8);
+  $('#challenge-9').html(challenge9);
+  $('#challenge-10').html(challenge10);
+  $('#challenge-11').html(challenge11);
   
   // highlight all the code snippets
   Prism.highlightAll();

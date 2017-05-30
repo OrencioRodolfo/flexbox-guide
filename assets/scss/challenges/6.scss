@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  height: 200px;
+  align-content: center;
+  justify-content: center;
+
+  div {
+    width: 20%;
+  }
+}
+
