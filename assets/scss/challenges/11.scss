@@ -1,8 +1,8 @@
 .flex-container {
   display: flex;
 
-  div:last-child {
-    flex-grow: 1;
+  div:first-child {
+    flex-basis: 20%;
   }
 }
 

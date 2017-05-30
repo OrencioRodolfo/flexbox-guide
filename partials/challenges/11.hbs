@@ -5,20 +5,25 @@
 <article class="challenge-body">
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <div class="row middle-xs">
-        <div class="col-xs-12">
-          <p>
-            <code>flex-shrink</code> defines whether flex items should shrink or not.
-            <br>
-            By default it has the value <b>1</b> but it can assume the value <b>0</b> or <b>1</b>
-          </p>
-        </div>
-      </div>
+      <p>
+        <code>flex-basis</code> defines the default size of a flex item before the extra space is distributed.
+        <br>
+        It can assume a length (like 20% or 20em, px, etc) or a keyword. The available keywords are:
+      </p>
+      <ul>
+        <li>auto: which is the default value.</li>
+        <li>content</li>
+        <li>fill</li>
+        <li>max-content</li>
+        <li>min-content</li>
+        <li>fit-content</li>
+      </ul>
+      <p>None of these values (except for the “auto”), are well supported yet, what makes it hard to test and to understand.</p>
     </div>
     <div class="col-xs-12 col-md-6">
       <div class="object-preview">
         <div class="flex-container">
-          <div>Lorem ipsum</div>
+          <div>1</div>
           <div>2</div>
           <div>3</div>
         </div>
