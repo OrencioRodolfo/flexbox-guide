@@ -1052,3 +1052,8 @@ h4 {
   display: flex; }
   #challenge-10 .object-preview .flex-container div:last-child {
     flex-grow: 1; }
+
+#challenge-11 .object-preview .flex-container {
+  display: flex; }
+  #challenge-11 .object-preview .flex-container div:first-child {
+    flex-basis: 20%; }
