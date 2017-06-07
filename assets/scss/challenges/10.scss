@@ -1,8 +1,7 @@
 .flex-container {
   display: flex;
-
-  div:last-child {
-    flex-grow: 1;
+  
+  div {
+    flex-shrink: 0;
   }
 }
-
