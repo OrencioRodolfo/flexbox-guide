@@ -850,9 +850,9 @@ h4 {
     width: 50px;
     margin: 0 auto 40px auto; }
   .section-title.primary {
-    color: #26A69A; }
+    color: #3c9b9f; }
     .section-title.primary .title-underline {
-      border-color: #26A69A; }
+      border-color: #3c9b9f; }
 
 .text-box {
   max-width: 1280px;
@@ -883,7 +883,7 @@ h4 {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: #26A69A;
+  background-color: #3c9b9f;
   display: inline-block;
   margin: 5px; }
 
@@ -905,7 +905,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  color: #00897B; }
+  color: #168186; }
   .challenge .section-heading .title {
     margin-bottom: 0; }
 
@@ -924,7 +924,7 @@ h4 {
     .flex-container > *:nth-child(even) {
       background-color: #f08110; }
     .flex-container > *:nth-child(odd) {
-      background-color: #26A69A; }
+      background-color: #3c9b9f; }
 
 .code-editor-wrapper {
   margin-top: 15px; }
@@ -934,12 +934,12 @@ h4 {
 
 .challenge-footer {
   height: 1px;
-  background-color: #00897B; }
+  background-color: #168186; }
 
 .page-head {
   color: white;
   text-align: center;
-  background-color: #26A69A;
+  background-color: #3c9b9f;
   position: relative;
   padding: 50px 50px 180px; }
   @media only screen and (max-width: 599px) {
