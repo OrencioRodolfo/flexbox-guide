@@ -1,18 +1,18 @@
 $palette-primary:
-  #E0F2F1
-  #B2DFDB
-  #80CBC4
-  #4DB6AC
-  #26A69A
-  #009688
-  #00897B
-  #00796B
-  #00695C
-  #004D40  
-  #A7FFEB
-  #64FFDA
-  #1DE9B6
-  #00BFA5;
+rgb(227, 241, 241)
+rgb(186, 220, 221)
+rgb(140, 196, 199)
+rgb(94, 172, 176)
+rgb(60, 155, 159)
+rgb(25, 137, 142)
+rgb(22, 129, 134)
+rgb(18, 118, 123)
+rgb(14, 108, 113)
+rgb(8, 89, 95)
+rgb(145, 246, 255)
+rgb(94, 242, 255)
+rgb(43, 238, 255)
+rgb(18, 237, 255);
 
 $palette-primary-50: nth($palette-primary, 1);
 $palette-primary-100: nth($palette-primary, 2);
